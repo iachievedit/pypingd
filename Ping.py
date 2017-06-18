@@ -15,7 +15,6 @@ class Ping:
 	    # Pinging
 	    proc = subprocess.Popen(["ping", "-t1", "-c1", "-o", host], stdout=subprocess.PIPE)
 	    output = proc.communicate()[0] # Debugging only when we want to 
-	    print output
 	    return proc.returncode
 
 if __name__ == "__main__":
