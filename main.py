@@ -10,10 +10,8 @@ class StatusResource(resource.Resource):
 	isLeaf = True
 
 	def render_GET(self, request):
-		self.numberRequests += 1
 		request.setHeader("context-type", "text/plain")
-		return "X"
-
+		return "8.8.8.8,AVAILABLE"
 
 pinger = Ping()
 

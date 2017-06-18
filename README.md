@@ -1,6 +1,23 @@
 # pypingd
 A Python Daemon for Pinging Things
 
+## TODO
+Right now there is a lot to be done!
+
+Running `python main.py HOST` will currently ping a host every two seconds and print the return code.  We want that return code to be presented to a web page if someone calls port 8080.  Something like this:
+
+curl http://localhost:8080/
+```
+8.8.8.8,AVAILABLE
+```
+
+When we have multiple hosts they will each have an entry.
+
+Status types:
+
+* AVAILABLE
+* UNAVAILABLE
+
 ## Project Goals
 Sometimes you just need to ping things and get a summary of what is reachable and what isn't.
 
